@@ -4,7 +4,7 @@ const isSimp = (n) =>{
         return -1
     }
     let flage = 1;
-    for (let i = 2; i <= n-1; i++) {
+    for (let i = 2; i <= Math.sqrt(n); i++) {
         if(n % i === 0){
             flag = 0;
             break;
@@ -12,4 +12,4 @@ const isSimp = (n) =>{
     }
     return flage
 }
-console.log(issimp(6));
+console.log(`${isSimp(2)}`);
